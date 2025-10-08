@@ -1,0 +1,14 @@
+{
+  "name": "@vigtra/fe-core",
+  "version": "0.1.0",
+  "description": "Core frontend module for Vigtra",
+  "type": "module",
+  "exports": "./src/index.ts",
+  "files": ["src/**/*"],
+  "tasks": {
+    "build": "rsbuild build && deno publish --sloppy-imports  --no-check"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
